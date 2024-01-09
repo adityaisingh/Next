@@ -1,12 +1,16 @@
+"use client";
 import Link from "next/link";
-
-const about = () => {
+import { useRouter } from "next/navigation";
+const About = () => {
+  const Router = useRouter();
   return (
     <div>
       <h4>about use</h4>
-      <Link href="/"> Go to Home page</Link>
+      <button onClick={() => Router.push("/")}>Go to Home Page </button>
+      <br />
+      <Link href={"/about/aboutcollge"}>Go to about collge page </Link>
     </div>
   );
 };
 
-export default about;
+export default About;
