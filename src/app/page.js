@@ -3,10 +3,12 @@ import Profile from "../../public/random.webp";
 export default function Home() {
   return (
     <main>
-      <Image src={Profile} width={700} height={700} />
+      <h1> </h1>
     </main>
   );
 }
+
+// <Image src={Profile} width={700} height={700} />;
 
 // "use client";
 // import { useState } from "react";
